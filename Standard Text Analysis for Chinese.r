@@ -10,9 +10,9 @@ stopwords <- as.character(stopwords$V1)
 stopwords_CN <- c(stopwords, stopwords())
 
 #ACCESSING FILES
-setwd("C:\\Users\\mstri\\Desktop\\Beijing")
+setwd("xxx")
 segmentCN("file.txt", returnType = "tm")
-docs <- Corpus(DirSource("C:\\Users\\mstri\\Desktop\\Beijing\\damnation"))
+docs <- Corpus(DirSource("xxx"))
 
 #PREPROCESSING
 docs <- tm_map(docs, content_transformer(tolower))
