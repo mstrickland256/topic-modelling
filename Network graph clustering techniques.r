@@ -1,5 +1,5 @@
 library(igraph)
-setwd("D:\\goto\\Topic Analysis Experiments")
+setwd("xxx")
 datable <- read.csv("AdjacencyMatrix A.csv")
 the_wordgraph <- graph_from_adjacency_matrix(datable, weighted = TRUE, mode = "lower")
 net_clusters <- cluster_walktrap(the_wordgraph, weights = E(graph)$weight, steps = 4,
