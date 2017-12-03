@@ -2,13 +2,12 @@
 library(tm)
 library(topicmodels)
 
-setwd("/users/shimiaoning/pdf") #Adjust this as necessary, obviously.
+setwd("xxx") #Adjust this as necessary, obviously.
 
 Sys.setlocale(locale="C")
 
-
 #INPUT
-goodpath <- "/users/shimiaoning/Ukoe"
+goodpath <- "xxx"
 docs <- Corpus(DirSource(goodpath), readerControl = list(reader=readPDF))
 
 # alternate method
